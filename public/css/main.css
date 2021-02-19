@@ -35,7 +35,7 @@ a {
 
 .container .new .linkinput {
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px;
   border: 2px solid #F2F2F2;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -52,7 +52,7 @@ a {
 .container .new .idinput {
   width: 10%;
   margin-left: 20px;
-  padding: 10px 10px;
+  padding: 10px;
   border: 2px solid #F2F2F2;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -69,7 +69,7 @@ a {
 .container .new .folderinput {
   width: 20%;
   margin-left: 20px;
-  padding: 10px 10px;
+  padding: 10px;
   border: 2px solid #F2F2F2;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -86,7 +86,7 @@ a {
 .container .new .add {
   margin-left: 20px;
   line-height: 40px;
-  padding: 0px 15px;
+  padding: 0 15px;
   background-color: #5F5F5F;
   color: #F2F2F2;
   border-radius: 4px;
@@ -106,13 +106,11 @@ a {
 .container .shorts {
   margin-top: 100px;
   width: 100%;
-  border: 0px;
 }
 
 .container .shorts tr th {
   text-align: left;
   font-weight: 500;
-  margin: 0px;
   border-bottom: 2px solid #5F5F5F;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -159,7 +157,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   .container {
-    margin: 5% 5%;
+    margin: 5%;
   }
   .container .new .linkinput {
     width: 20%;

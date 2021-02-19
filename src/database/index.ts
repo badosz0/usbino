@@ -2,7 +2,7 @@ import rethinkdb from "rethinkdb"
 import { log } from "../utils/logger"
 import { Config } from "../types"
 
-export let connection: rethinkdb.Connection | void = undefined
+export let connection: rethinkdb.Connection | void
 
 export async function connect(config: Config): Promise<void> {
     try {

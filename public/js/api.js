@@ -3,13 +3,13 @@ function add(verify) {
     const id = $("#idinput").val()
     const folder = $("#folderinput").val()
 
-    $.post( `/add`, {link, id, folder, verify}, function(data) {
+    $.post( `/add`, {link, id, folder, verify}, function() {
         location.reload()
     }, "json")
 }
 
 function remove(verify, id) {
-    $.post( `/remove`, {id, verify}, function(data) {
+    $.post( `/remove`, {id, verify}, function() {
         location.reload()
     }, "json")
 }

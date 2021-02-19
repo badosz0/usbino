@@ -24,8 +24,8 @@ export interface Config {
 }
 
 export interface Short {
-    id: string, 
-    link: string, 
+    id: string,
+    link: string,
     usage: number,
     createdat: number
 }

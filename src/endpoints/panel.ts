@@ -49,12 +49,12 @@ export = (app: Application, config: Config) => {
         try {
             new URL(link)
         } catch (_) {
-            return error(res, "Invalid link.")  
+            return error(res, "Invalid link.")
         }
 
         const short: Short = {
-            id: folder as string + "-" + id as string, 
-            link: link, 
+            id: folder as string + "-" + id as string,
+            link: link,
             usage: 0,
             createdat: Date.now()
         }

@@ -3,7 +3,7 @@ $concrete: #F2F2F2;
 $scorpion: #5F5F5F;
 
 @mixin input {
-    padding: 10px 10px;
+    padding: 10px;
     border: 2px solid $concrete;
     background-color: $concrete;
     border-radius: 4px;
@@ -11,7 +11,7 @@ $scorpion: #5F5F5F;
     font-size: 14px;
 
     &:focus {
-        outline: none; 
+        outline: none;
         border: 2px solid $scorpion;
     }
 }
@@ -65,7 +65,7 @@ a {
         .add {
             margin-left: 20px;
             line-height: 40px;
-            padding: 0px 15px;
+            padding: 0 15px;
             background-color: $scorpion;
             color: $concrete;
             border-radius: 4px;
@@ -86,13 +86,11 @@ a {
     .shorts {
         margin-top: 100px;
         width: 100%;
-        border: 0px;
 
         tr {
             th {
                 text-align: left;
                 font-weight: 500;
-                margin: 0px;
 
                 border-bottom: 2px solid $scorpion;
 
@@ -147,7 +145,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     .container {
-        margin: 5% 5%;
+        margin: 5%;
 
         .new {
             .linkinput {

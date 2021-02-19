@@ -1,6 +1,6 @@
 export function generate_string(length: number, capital: boolean, lower: boolean, numbers: boolean): string {
     const characters = "" +
-        (capital ? "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : "") + 
+        (capital ? "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : "") +
         (lower ? "abcdefghijklmnopqrstuvwxyz" : "") +
         (numbers ? "0123456789" : "")
 
