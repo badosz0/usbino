@@ -83,6 +83,23 @@ a {
   border: 2px solid #5F5F5F;
 }
 
+.container .new .passwordinput {
+  width: 20%;
+  margin-left: 20px;
+  padding: 10px;
+  border: 2px solid #F2F2F2;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container .new .passwordinput:focus {
+  outline: none;
+  border: 2px solid #5F5F5F;
+}
+
 .container .new .add {
   margin-left: 20px;
   line-height: 40px;
@@ -150,20 +167,33 @@ a {
   .container {
     margin: 5% 10%;
   }
+  .container .new {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container .new .idinput {
-    width: 20%;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+  .container .new .folderinput {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+  .container .new .passwordinput {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+  }
+  .container .new .add {
+    padding: 10px calc(50% - 16px);
+    margin: 30px 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .container {
     margin: 5%;
-  }
-  .container .new .linkinput {
-    width: 20%;
-  }
-  .container .new .idinput {
-    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
