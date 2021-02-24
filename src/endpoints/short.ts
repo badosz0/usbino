@@ -21,12 +21,12 @@ export = (app: Application, config: Config) => {
                 .status(404)
                 .send(config.notfound)
                 .end()
-        } else {
-            short.usage += 1
-            await update_short(short)
+        } 
+        
+        short.usage += 1
+        await update_short(short)
 
-            res.redirect(short.link)
-        }
+        res.redirect(short.link)
     })
 
     app.get("*", async (req, res) => {

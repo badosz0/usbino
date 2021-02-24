@@ -2,8 +2,9 @@ function add(verify) {
     const link = $("#linkinput").val()
     const id = $("#idinput").val()
     const folder = $("#folderinput").val()
+    const password = $("#passwordinput").val()
 
-    $.post( `/add`, {link, id, folder, verify}, function() {
+    $.post( `/add`, {link, id, folder, verify, password}, function() {
         location.reload()
     }, "json")
 }

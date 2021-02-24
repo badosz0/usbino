@@ -23,8 +23,9 @@
         <div class="container">
             <div class="new">
                 <input class="linkinput" type="text" id="linkinput" name="linkinput" placeholder="Link">
-                <input class="idinput" type="text" id="idinput" name="idnput" placeholder="ID">
-                <input class="folderinput" type="text" id="folderinput" name="foldernput" placeholder="Folder">
+                <input class="idinput" type="text" id="idinput" name="idinput" placeholder="ID">
+                <input class="folderinput" type="text" id="folderinput" name="folderinput" placeholder="Folder">
+                <input class="passwordinput" type="password" id="passwordinput" name="password" placeholder="Password">
                 <span class="add" onclick="add('<%= UID %>')">
                     Add
                 </span>
@@ -35,7 +36,8 @@
                     <th onclick="sort(2, true)">Created At</th>
                     <th class="hide">Date</th>
                     <th onclick="sort(3)">Link</th>
-                    <th onclick="sort(4, true)">Usage</th>
+                    <th>Password</th>
+                    <th onclick="sort(5, true)">Usage</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -53,6 +55,7 @@
                             <%= short.link %>
                         </a>
                     </td>
+                    <td><%= short.password %></td>
                     <td><%= short.usage %></td>
                     <td class="copy" onclick="copy('<%= (folder == `all` ? `` : `${folder}/`) + sid  %>')">C</td>
                     <td class="remove" onclick="remove('<%= UID %>', '<%= short.id %>')">X</td>

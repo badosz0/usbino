@@ -30,6 +30,7 @@ export = (app: Application, config: Config) => {
         const id = req.body.id || generate_string(config.id.length, config.id.capital, config.id.lower, config.id.numbers)
         let link = req.body.link as string
         const folder = req.body.folder || "all"
+        const password = req.body.password
         const verify = req.body.verify
 
         if (verify != UID) {
@@ -57,6 +58,10 @@ export = (app: Application, config: Config) => {
             link: link,
             usage: 0,
             createdat: Date.now()
+        }
+
+        if (password) {
+            short.password = password
         }
 
         const exists = await get_short(short.id)

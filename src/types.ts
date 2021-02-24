@@ -28,4 +28,5 @@ export interface Short {
     link: string,
     usage: number,
     createdat: number
+    password?: string
 }
